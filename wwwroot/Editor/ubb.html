@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+#oblog_ubb{
+	border: 1px solid #ccc;
+	width:400px;}
+#oblog_ubb .oblog_ubbtoolbar{
+	background-color:#F0F0EE;
+	border-bottom:1px solid #ccc;
+	padding:2px;
+}
+#oblog_ubb .oblog_ubbtext{
+	width:100%;
+	border:none;
+	overflow-y:auto;
+	overflow-x:none;
+	padding:2;
+	word-spacing:inherit;
+}
+#oblog_ubbemot{
+	VISIBILITY: hidden; 
+	POSITION: absolute; 
+	TEXT-ALIGN: left;
+	border:1px solid #ccc;
+	background-color:#F0F0EE;
+	width:280px;
+	
+}
+#oblog_ubb a:link{
+	border:1px solid #F0F0EE;
+	padding:2px;
+}
+#oblog_ubb a:visited {
+	border:1px solid #F0F0EE;
+	padding:1px;
+}
+#oblog_ubb a:hover {
+	border:1px solid #0A246A;
+	padding:1px;
+}
+</style>
+</head>
+<body>
+<Script src="ubb.js"></Script>
+<div id="oblog_ubb">
+	<div class="oblog_ubbtoolbar">
+	<a href="javascript:InsertText(objActive,ReplaceText(objActive,'[B]','[/B]'),true);void(0)"><img src="images/bold.gif" alt="粗体"  border="0" align="absmiddle"></a>
+	<a href="javascript:InsertText(objActive,ReplaceText(objActive,'[I]','[/I]'),true);void(0)"><img src="images/italic.gif" alt="斜体" border="0" align="absmiddle" ></a>
+	<a href="javascript:InsertText(objActive,ReplaceText(objActive,'[U]','[/U]'),true);void(0)"><img src="images/underline.gif" alt="下划线" border="0" align="absmiddle"></a>
+	<a href="javascript:InsertText(objActive,ReplaceText(objActive,'[QUOTE]','[/QUOTE]'),true);void(0)"><img src="images/quote.gif" alt="插入引用" border="0" align="absmiddle"></a>
+	<a href="javascript:UBB_smiley();void(0)"><img src="images/smiley.gif" alt="插入表情" border="0" align="absmiddle" id="A_smiley"></a>
+	</div>
+	<div id="oblog_ubbemot">
+	</div>
+	  <textarea name="oblog_ubbtext" cols="50" rows="10" id="oblog_ubbtext" class="oblog_ubbtext" ></textarea>
+</div>
+
+
+
+<script language="javascript">
+	//document.getElementById("oblog_ubbemot").display="none";
+	//alert(getemot());
+</script>
+</body>
+</html>

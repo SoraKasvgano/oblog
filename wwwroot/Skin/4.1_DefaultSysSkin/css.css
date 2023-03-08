@@ -1,0 +1,299 @@
+/*
+(C) 2005-2007 悠悠易 Inc.
+OBLlog 4.1 官方默认系统模板
+http://www.oblog.cn
+设计制作：OBLog官方
+模板定制：QQ.652888828
+*/
+/* ============================================================================ 全局 == */
+html { height: 100%; }
+body { margin: 0; height: 100%; background: #fff; font-size: 12px; font-family: tahoma,Arial,Century Gothic,verdana,Helvetica,sans-serif; color: #333; line-height: 150%; text-align: center; word-break: break-all; }
+
+div,ul,ol,form { margin: 0; padding: 0; }
+img { border: 0; }
+li { list-style: none; }
+table { font-size: 12px; }
+input { font-family: tahoma,Arial,Helvetica,sans-serif; font-size: 12px; }
+h1,h2,h3,h4,h5,h6,h7 { margin: 0; padding: 0; text-align: left; font-size: 12px; font-weight: 400; }
+p { margin: 0; }
+/* ============================================================================ 连接 == */
+a:link{ text-decoration: none; color: #42414A; }
+a:visited { text-decoration: none; color: #42414A; }
+a:hover { text-decoration: underline; color: #000; }
+a:active { text-decoration: underline; color: #000; }
+/* ============================================================================ 常用 == */
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.none { display: none; }
+/* ============================================================================ 布局 == */
+#Header,#Container { margin: 0 auto; width: 780px; text-align: left; }
+#Container .PageBody { margin: auto auto 10px auto; }
+
+
+.PageBodyTitle { clear: both; font-weight: 600; font-size: 18px; color: #fff; }
+	.PageBodyTitle span { float: right; margin: -18px 5px 0 0; width: 600px; overflow: hidden; text-align: right; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: #844800; font-weight: 400; }
+	@media all and (min-width: 0px){
+	.PageBodyTitle span { margin: auto!important; }
+	}/* opera hack */
+/* ----------------------------------- 头 #Header -- */
+#Header { margin: auto auto 10px auto; }
+	#TopMenu { padding: 5px 10px 0 0; height: 20px; text-align: right; }
+	#TopLogo { height: 70px; }
+		#logo { float: left; width: 240px; height: 70px; overflow:hidden; }
+			#logo a { display: block; width: 240px; height: 70px; background: url(logo.jpg) no-repeat center center; text-indent:-9999px; }
+		#banner { float: right; width: 530px; height: 70px; overflow:hidden; }
+	#Menu { height: 22px; margin: 10px 0 0 0; padding: 5px 0 0 20px; clear: both; background: #3697EA url(bg.png) no-repeat left top; font-weight: 600; color: #fff; letter-spacing: 2px; }
+		#Menu a { color: #fff; }
+			#Rss2 { float: right; margin: -18px 10px 0 0; }
+			@media all and (min-width: 0px){
+			#Rss2 { float: right; margin: -2px 10px 0 0; }
+			}/* opera hack */
+				#Rss2 img { vertical-align: middle; }
+	#Login { height: 28px; padding: 3px 0 0 10px; background: url(bg.png) no-repeat left -27px; color: #666; }
+		#Login table.Before { margin: -2px 0 0 0; }
+			#ob_login #UserName,#ob_login #Password,#ob_login #codestr { height: 12px; }
+			#ob_login img#ob_codeimg { margin: 2px 0 0 0; height: 16px; }
+			#ob_login #submit { height: 19px; }
+	#Search { margin: 5px 0 0 0; height: 20px; text-align: right; }
+		#Search form { background: url(bg.png) no-repeat 415px -59px;  }
+			#Search form input { height: 21px; vertical-align: -1px; }
+			#Search form #keyword { margin: 0 10px 0 10px; width: 150px; height: 15px!important; height: 13px; vertical-align: 0px; }
+			*+html #Search form #keyword { height: 13px!important; }/* IE7 hack */
+			@media all and (min-width: 0px){
+			#Search form #keyword { height: 22px!important; vertical-align: -2px; }
+			}/* opera hack */
+
+/* ----------------------------------- 热门日志 #HotLog -- */
+#HotLog {}
+	#HotLog .Sidebar { float: left; width: 250px; }
+/* -- flash -- */
+		#HotLog .Sidebar #flash { height: 230px; padding: 4px; border: 1px #ccc solid;}
+/* -- 最热评论日志 -- */
+		#HotLog .Sidebar #MostCommentLog { margin: 10px 0 0 0;  }
+			#HotLog .Sidebar #MostCommentLog .title { padding: 0 0 0 5px; font-weight: 600; }
+				#HotLog .Sidebar #MostCommentLog .title span { margin: 0 0 0 130px; color: #f00; font-size: 10px; }
+			#HotLog .Sidebar #MostCommentLog ul { margin: 0!important; border: 1px #ccc solid; padding: 4px 5px 4px 35px; background: url(bg.png) no-repeat 4px -79px;   }
+				#HotLog .Sidebar #MostCommentLog ul li { width: 200px; line-height: 1.6; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+	#HotLog .MainBody { float: right; width: 520px; }
+		#HotLog .MainBody .left { width: 350px; }
+/* -- 一周热门日志 -- */
+			#HotLog .MainBody .left .title { border-bottom: 2px #333 dotted; font-size: 14px; font-weight: 600; }
+				#HotLog .MainBody .left .title span { float: right; margin: -18px 0 0 0;  color: #f00; font-size: 10px; }
+				@media all and (min-width: 0px){
+				#HotLog .MainBody .left .title span { margin: auto; }
+				}/* opera hack */
+				#HotLog .MainBody .left ul { margin: 10px auto auto auto!important; }
+					#HotLog .MainBody .left ul li { clear: both; height: 26px; border-bottom: 1px #ccc dashed; line-height: 1.8; }
+						#HotLog .MainBody .left ul li a { float: left; width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+						#HotLog .MainBody .left ul li .ob_log_c1 { display: none; }
+							#HotLog .MainBody .left ul li .ob_log_uname a { float: right; width: 70px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: #999;  }
+
+		#HotLog .MainBody .right { width: 160px; }
+/* -- 公告 -- */
+			#HotLog .MainBody .right #Placard { padding: 3px 8px; height: 170px; border-top: 1px #DADADA dashed; border-bottom: 1px #DADADA dashed; background: #FFFEEF; overflow-x:hidden; overflow-y:auto; }
+				#HotLog .MainBody .right #Placard .title,#HotLog .MainBody .right #BestSkin .title { font-weight: 600; color: #EC6617; text-align: left; }
+/* -- 推荐模板 -- */
+			#HotLog .MainBody .right #BestSkin { margin: 10px 0 0 0; padding: 8px 8px 4px 8px; border: 1px #ededed solid; background: #F8F8F8; text-align: center; }
+				#HotLog .MainBody .right #BestSkin .title { margin: 0 0 8px 0; border-bottom: 1px #ccc dashed; }
+					#HotLog .MainBody .right #BestSkin a img { max-width: 140px; max-height: 85px; expression(this.width >140 && this.height < this.width ? 140: true); height: expression(this.height > 85 ? 85: true); border: 1px #666 solid; }
+					*html #HotLog .MainBody .right #BestSkin .Skinname a { width: 130px; }/* IE6 hack */
+				#HotLog .MainBody .right #BestSkin .Skinname a { display: block; max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
+
+/* ----------------------------------- 博客文章 #NewLog -- */
+#NewLog {  }
+	#NewLogTitle { height: 23px; padding: 6px 0 0 35px; background: #F2DAA8 url(bg.png) no-repeat left -150px; font-weight: 600; font-size: 18px; color: #fff;  }
+			#NewLogTitle span a { color: #844800; }
+	#NewLogContent { height: 290px; overflow:hidden; border: 1px #F2DAA8 solid; border-top: none; }
+/* -- 精华日志 -- */
+		#NewLogContent .Sidebar { float: left; width: 200px; height: 290px; border-right: 1px #F2DAA8 solid; background: #FFFCF8;  }
+			#NewLogContent .Sidebar .title { font-weight: 600; padding: 3px 0 2px 6px; border-bottom: 1px #F2DAA8 solid; background: #FFF6EC; }
+			#NewLogContent .Sidebar ul { margin: auto!important; padding: 2px 5px 0 5px; }
+				#NewLogContent .Sidebar ul li { clear: both; padding: 2px 0 0 18px; background: url(bg.png) no-repeat -300px -91px; border-bottom: 1px #ccc dashed; line-height: 1.4; }
+					#NewLogContent .Sidebar ul li a { display: block; width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+					#NewLogContent .Sidebar ul li .ob_log_uname { display: block; padding: 0 10px 0 0; text-align: right; }
+						#NewLogContent .Sidebar ul li .ob_log_uname a { display: inline; color: #999; }
+					#NewLogContent .Sidebar ul li .ob_log_c1 { display: none; }
+
+/* -- 最新日志 -- */
+		#NewLogContent .MainBody {  }
+			#NewLogContent .MainBody .left { width: 378px; }
+				#NewLogContent .MainBody .left .title { margin: 7px 0 0 5px; border-bottom: 2px #666 dotted; font-size: 14px; font-weight: 600; color: #F68A08;  }
+				#NewLogContent .MainBody .left .title span { float: right; margin: -18px 5px 0 0; color: #f00; font-size: 10px; }
+				@media all and (min-width: 0px){
+				#NewLogContent .MainBody .left .title span { margin: 0 5px 0 0; }
+				}/* opera hack */
+				#NewLogContent .MainBody .left ul { margin: auto!important; padding: 10px 5px 0 10px; }
+					#NewLogContent .MainBody .left ul li { clear: both; height: 22px!important; height: 19px; line-height: 1.5; border-bottom: 1px #ccc dashed; }
+					*+html #NewLogContent .MainBody .left ul li { height: 19px!important; } /* IE7 hack */
+						#NewLogContent .MainBody .left ul li a { float: left; width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+							#NewLogContent .MainBody .left ul li .ob_log_uname a { float: right; width: 70px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: #999; }
+						#NewLogContent .MainBody .left ul li .ob_log_c1 { display: none; }
+				#NewLogContent .MainBody .left .more { text-align: right; }
+				#NewLogContent .MainBody .left .more a { color: #F68A08; text-decoration: underline;  }
+				#NewLogContent .MainBody .left .more a:hover { text-decoration: none;  }
+
+			#NewLogContent .MainBody .right { width: 190px; height: 290px; border-left: 1px #F2DAA8 solid; background: #FFFCF8; }
+				#NewLogContent .MainBody .right .title { font-weight: 600; padding: 3px 0 2px 6px; border-bottom: 1px #F2DAA8 solid; background: #FFF6EC; } 
+				#NewLogContent .MainBody .right #Tags { padding: 0 5px;  }
+
+/* ----------------------------------- DIGG #DIGG -- */
+#DIGG {  }
+	#DIGGTitle { height: 23px; padding: 6px 0 0 35px; background: #F1EBA8 url(bg.png) no-repeat left -180px; font-weight: 600; font-size: 18px; color: #fff;  }
+	#DIGGContent { height: 302px; border: 1px #F1EBA8 solid; border-top: none; }
+		#DIGGContent .Sidebar { float: left; width: 190px; border-right: 1px #F1E4A8 solid; background: #FFF8EB; }
+		#DIGGContent .Sidebar .title { font-weight: 600; padding: 3px 0 2px 6px; }
+/* -- 被推荐最多用户 -- */
+		#DIGGContent .Sidebar #DIGGMostUser { margin: 3px; padding: 5px 3px; height: 260px; overflow:hidden; background: #fff; border: 1px #F1E4A8 solid; }
+		#DIGGContent .Sidebar #DIGGMostUser .DIGGMostUser { clear: both; padding: 5px 10px; }
+			#DIGGContent .Sidebar #DIGGMostUser .DIGGMostUser .DIGGMostUserIco { float: left; margin: 0 6px 0 0; padding: 1px 0 0 1px; width: 56px; height: 56px; background: url(bg.png) no-repeat -150px -310px; }
+			#DIGGContent .Sidebar #DIGGMostUser .DIGGMostUser .DIGGMostUserIco img { width: 48px; height: 48px; }
+
+			#DIGGContent .Sidebar #DIGGMostUser .DIGGMostUser .DIGGMostUserName { text-align: right; color: #999;  }
+				#DIGGContent .Sidebar #DIGGMostUser .DIGGMostUser .DIGGMostUserName a { float: left; display: block; margin: 6px 0 0 0; width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; }
+				#DIGGContent .Sidebar #DIGGMostUser .DIGGMostUser .DIGGMostUserName span { color: #f60; }
+
+		#DIGGContent .MainBody { float: right; width: 585px; }
+			#DIGGContent .MainBody .left { width: 364px; }
+				#DIGGContent .MainBody .left .title { margin: 7px 0 0 5px; border-bottom: 2px #666 dotted; font-size: 14px; font-weight: 600; }
+					#DIGGContent .MainBody .left .title span { float: right; margin: -18px 5px 0 0; color: #f00; font-size: 10px; }
+					@media all and (min-width: 0px){#DIGGContent .MainBody .left .title span {margin: 0 5px 0 0; }}/* opera hack */
+				#DIGGContent .MainBody .left #NewDIGG { padding: 8px 8px 0 8px;  }
+					#DIGGContent .MainBody .left #NewDIGG .NewDIGG { clear: both; padding: 2px 0 0 0; height: 40px;  border-bottom: 1px #ccc dashed; }
+						#DIGGContent .MainBody .left #NewDIGG .NewDIGG .DIGGNumber { float: left; display: block; margin: 4px 8px 0 0; padding: 5px 0 0 0; width: 30px; height: 30px; background: url(bg.png) no-repeat -250px -310px; text-align: center; color: #93883F; font-size: 11px; font-weight: 600; }
+						#DIGGContent .MainBody .left #NewDIGG .NewDIGG .DIGGTitle { float: left; padding: 6px 0 0 0; width: 310px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 1.0;  }
+							#DIGGContent .MainBody .left #NewDIGG .NewDIGG .DIGGTitle a { color: #494949;  }
+						#DIGGContent .MainBody .left #NewDIGG .NewDIGG .DIGGTime { float: left; font-size: 10px; color: #999; }
+						#DIGGContent .MainBody .left #NewDIGG .NewDIGG .DIGGUser { float: right; }
+							#DIGGContent .MainBody .left #NewDIGG .NewDIGG .DIGGUser a { color: #999; }
+/* -- 用户推荐排行榜 -- */
+			#DIGGContent .MainBody .right { width: 220px; height: 302px; background: #FFFfF7; border-left: 1px #F1E4A8 solid;}
+				#DIGGContent .MainBody .right .title { padding: 4px 0 3px 6px; border-bottom: 1px #F1E4A8 solid; background: #FFF8EB; font-weight: 600; }
+					#DIGGContent .MainBody .right .title span { float: right; margin: -18px 5px 0 0;  color: #f00; font-size: 10px; }
+					@media all and (min-width: 0px){#DIGGContent .MainBody .right .title span {margin: 0 5px 0 0; }}/* opera hack */
+				#DIGGContent .MainBody .right #DIGGTop { padding: 0 8px; }
+					#DIGGContent .MainBody .right #DIGGTop .DIGGTop { clear: both; height: 34px!important; height: 30px; }
+						#DIGGContent .MainBody .right #DIGGTop .DIGGTop .DIGGNumber { float: left; display: block; margin: 4px 8px 0 0; padding: 5px 0 0 0; width: 30px; height: 25px; background: url(bg.png) no-repeat -250px -310px; text-align: center; color: #93883F; font-size: 10px; }
+						#DIGGContent .MainBody .right #DIGGTop .DIGGTop .DIGGTitle { float: left; margin: 8px 0 0 0;  width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+							#DIGGContent .MainBody .right #DIGGTop .DIGGTop .DIGGTitle a { color: #666;  }
+
+/* ----------------------------------- 博客相册 #BlogPhoto -- */
+#BlogPhoto {  }
+	#BlogPhotoTitle { height: 23px; padding: 7px 0 0 35px; background: #BDDCA7 url(bg.png) no-repeat left -210px; font-weight: 600; font-size: 18px; color: #fff;  }
+	#BlogPhotoContent { height: 250px; border: 1px #BDDCA7 solid; border-top: none; }
+		#BlogPhotoContent .Sidebar { float: left; width: 477px;  }
+			#BlogPhotoContent .Sidebar .title { display: none; }
+			#BlogPhotoContent .Sidebar #NewPhotoAlbum { text-align: center; padding: 0 0 0 10px;  }
+				#BlogPhotoContent .Sidebar #NewPhotoAlbum .NewPhotoAlbum { float: left; width: 115px; height: 105px; padding: 15px 0 0 0; overflow: hidden; background: url(bg.png) no-repeat 10px -302px; }
+				#BlogPhotoContent .Sidebar #NewPhotoAlbum .NewPhotoAlbum .NewPhotoAlbumImg { margin: 0 0 6px 0;  }
+					#BlogPhotoContent .Sidebar #NewPhotoAlbum .NewPhotoAlbum .NewPhotoAlbumImg img { width: 75px; height: 75px; }
+
+				#BlogPhotoContent .Sidebar #NewPhotoAlbum .NewPhotoAlbum .NewPhotoAlbumName { width: 85px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+		#BlogPhotoContent .MainBody { float: right; width: 300px; height: 250px; overflow: hidden; border-left: 1px #BDDCA7 solid; background: #F3FCE9 ; }
+			#BlogPhotoContent .MainBody .title { padding: 5px 0 0 10px; font-weight: 600; }
+				#BlogPhotoContent .MainBody #NewPhoto .NewPhoto { float: left; padding: 10px 0 0 0; width: 100px; height: 100px; overflow: hidden; text-align: center; }
+						#BlogPhotoContent .MainBody #NewPhoto .NewPhoto .NewPhotoImg img { width: 75px; height: 75px; border: 2px #BDDCA7 solid; }
+					#BlogPhotoContent .MainBody #NewPhoto .NewPhoto .NewPhotoName { width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+						#BlogPhotoContent .MainBody #NewPhoto .NewPhoto .NewPhotoName a { color: #42691B; }
+
+/* ----------------------------------- 博客圈子 #BlogGroup -- */
+#BlogGroup {  }
+	#BlogGroupTitle { height: 23px; padding: 8px 0 0 35px; background: #F4C3B9 url(bg.png) no-repeat left -240px; font-weight: 600; font-size: 18px; color: #fff;  }
+	#BlogGroupContent { height: 287px; overflow:hidden;border: 1px #F4C3B9 solid; border-top: none; }
+/* -- 最新圈子 -- */
+		#BlogGroupContent .Sidebar { float: left; width: 260px; height: 287px; background: #FFEBEB; border-right: 1px #F4C3B9 solid; }
+			#BlogGroupContent .Sidebar .title { padding: 4px 0 3px 6px; font-weight: 600; }
+			#BlogGroupContent .Sidebar #NewGroup {}
+				#BlogGroupContent .Sidebar #NewGroup ul { margin: auto!important; }
+					#BlogGroupContent .Sidebar #NewGroup ul li { float: left; margin: 0 0 6px 5px!important; margin: 0 0 6px 3px; padding: 8px 0 0 0; width: 120px; height: 115px; border: 1px #F7D1CA solid; background: #FFf; text-align: center; font-size: 10px; color: #999; }
+						#BlogGroupContent .Sidebar #NewGroup ul li img { border: 1px #999 solid; }
+						#BlogGroupContent .Sidebar #NewGroup ul li a { display: block; margin: auto; width: 110px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+	#BlogGroupContent .MainBody {}
+/* -- 最新用户推荐文章 -- */
+		#BlogGroupContent .MainBody .left { width: 360px; }
+			#BlogGroupContent .MainBody .left .title { margin: 7px 0 0 5px; border-bottom: 2px #666 dotted; font-size: 14px; font-weight: 600; }
+				#BlogGroupContent .MainBody .left .title span { float: right; margin: -18px 5px 0 0;  color: #f00; font-size: 10px; }
+				@media all and (min-width: 0px){#BlogGroupContent .MainBody .left .title span {margin: 0 5px 0 0; }}/* opera hack */
+			#BlogGroupContent .MainBody .left #NewGroupLog {}
+				#BlogGroupContent .MainBody .left #NewGroupLog ul { margin: auto!important; padding: 4px 8px 0 8px; }
+					#BlogGroupContent .MainBody .left #NewGroupLog ul li { height: 24px; overflow-y:hidden; border-bottom: 1px #ccc dashed; line-height: 2.0; color: #999; }
+						#BlogGroupContent .MainBody .left #NewGroupLog ul li a { float: left; display: block; width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* -- 最受欢迎圈子 -- */
+		#BlogGroupContent .MainBody .right { width: 150px; height: 287px; border-left: 1px #F4C3B9 solid;background: #FFF7F7; }
+			#BlogGroupContent .MainBody .right .title { padding: 4px 0 3px 6px; font-weight: 600; border-bottom: 1px #F4C3B9 solid; background: #FFEBEB; }
+				#BlogGroupContent .MainBody .right .title span { float: right; margin: -18px 5px 0 0;  color: #f00; font-size: 10px; }
+				@media all and (min-width: 0px){#BlogGroupContent .MainBody .right .title span {margin: 0 5px 0 0; }}/* opera hack */
+			#BlogGroupContent .MainBody .right #PopGroup {  }
+				#BlogGroupContent .MainBody .right #PopGroup ul { margin: auto!important;  }
+					#BlogGroupContent .MainBody .right #PopGroup ul li { border-bottom: 1px #ccc dashed; background: url(bg.png) no-repeat -500px -90px; line-height: 1.8!important; line-height: 1.6; text-align: right; color: #999; font-size: 11px; }
+						#BlogGroupContent .MainBody .right #PopGroup ul li a { float: left; display: block; padding: 0 5px 0 20px; width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; font-size: 12px; }
+
+/* ----------------------------------- 博客 #BlogUser -- */
+#BlogUser {  }
+	#BlogUserTitle { height: 22px; padding: 9px 0 0 35px; background: #B9D1F4 url(bg.png) no-repeat left -270px; font-weight: 600; font-size: 18px; color: #fff; }
+		#BlogUserTitle span { color: #005FB5; }
+			#BlogUserTitle span a { color: #005FB5; }
+	#BlogUserContent { height: 280px; border: 1px #B9D1F4 solid; border-top: none; }
+		#BlogUserContent .Sidebar { float: left; width: 200px; border-right: 1px #B9D1F4 solid; background: #E6F1FD; overflow-x: hidden; }
+		#BlogUserContent .Sidebar #BlogStar { margin: 5px; height: 270px; overflow-y:auto; overflow-x: hidden; background: #FFf;  }
+		#BlogUserContent .Sidebar #BlogStar .title { margin: 0 5px; padding: 4px 0 3px 20px; background: url(bg.png) no-repeat -150px -395px;  border-bottom: 1px #ccc dashed; font-weight: 600; }
+			#BlogUserContent .Sidebar #BlogStar div { padding: 0 10px; }
+				#BlogUserContent .Sidebar #BlogStar div a { font-weight: 600; color: #2E99FD; }
+					#BlogUserContent .Sidebar #BlogStar div a img { padding: 5px; border: 1px #EBEDF9 solid; max-width:130px; max-height:130px; width: expression(this.width >110 && this.height < this.width ? 110: true); height:  expression(this.height > 90 ? 90: true);  }
+
+		#BlogUserContent .MainBody { float: right; width: 577px; }
+			#BlogUserContent .MainBody .left { width: 386px; }
+				#BlogUserContent .MainBody .left .title { padding: 2px 0 2px 6px; border-bottom: 1px #A8C5F1 solid; background: #E6F1FD; font-weight: 600; }
+/* -- 同城博客搜索 -- */
+					#BlogUserContent .MainBody .left .title form { display: inline; }
+/* -- 热门博客 -- */
+				#BlogUserContent .MainBody .left #HotBlogUser {}
+				#BlogUserContent .MainBody .left #HotBlogUser ul {padding: 15px 0 0 0; }
+				#BlogUserContent .MainBody .left #HotBlogUser ul li { float: left; width: 95px; height: 68px; overflow:hidden; text-align: center; }
+				#BlogUserContent .MainBody .left #HotBlogUser ul li a { display: block; width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+				#BlogUserContent .MainBody .left #HotBlogUser ul li a img { border: 1px #999 solid; width: 48px; height: 48px;  }
+
+			#BlogUserContent .MainBody .right { width: 190px; height: 280px; border-left: 1px #A8C5F1 solid; background: #F5FAFE; }
+				#BlogUserContent .MainBody .right .title { padding: 4px 0 3px 6px; border-bottom: 1px #A8C5F1 solid; background: #E6F1FD; font-weight: 600; }
+/* -- 更新排行、最新注册 -- */
+				#BlogUserContent .MainBody .right #BlogUpdate,#BlogUserContent .MainBody .right #NewBlogger {  }
+					#BlogUserContent .MainBody .right #BlogUpdate ul { border-bottom: 1px #A8C5F1 solid; }
+					#BlogUserContent .MainBody .right #BlogUpdate ul,#BlogUserContent .MainBody .right #NewBlogger ul { padding: 4px 0; margin: auto!important; }
+						#BlogUserContent .MainBody .right #BlogUpdate ul li,#BlogUserContent .MainBody .right #NewBlogger ul li { padding: 0 0 0 10px; /* -- list-style: disc inside none; -- */  }
+						#BlogUserContent .MainBody .right #BlogUpdate ul li a,#BlogUserContent .MainBody .right #NewBlogger ul li a { display: block; width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+
+
+/* ----------------------------------- 友情连接 #BlogLinks -- */
+#BlogLinks { border: 1px #CCC solid; background: #F4F4F4; }
+#BlogLinks .border { border: 1px #fff solid; padding: 10px; }
+
+/* ----------------------------------- 副模板 #IndexList -- */
+#IndexList {}
+	#IndexList .Sidebar { float: left; width: 200px; }
+		#IndexList .Sidebar .title { clear: both; padding: 3px 0 2px 6px; font-weight: 600; }
+/* -- 标签 -- */
+		#IndexList .Sidebar #NewTags { background: #FFFCF8; border: 1px #F2DAA8 solid; margin: 0 0 10px 0; }
+		#IndexList .Sidebar #NewTags .title { background: #FFF6EC; border-bottom: 1px #F2DAA8 solid; }
+		#IndexList .Sidebar #NewTags .content { padding: 10px; }
+/* -- 相片 -- */
+		#IndexList .Sidebar #NewPhoto { background: #F3FCE9; border: 1px #BDDCA7 solid; margin: 0 0 10px 0; }
+			#IndexList .Sidebar #NewPhoto .title { background: #E4F9CE; border-bottom: 1px #BDDCA7 solid; }
+			#IndexList .Sidebar #NewPhoto .content { padding: 10px; text-align: center; }
+/* -- 群组 -- */
+		#IndexList .Sidebar #NewGroup { background: #FFF7F7; border: 1px #F1B4A8 solid; margin: 0 0 10px 0; }
+			#IndexList .Sidebar #NewGroup .title { background: #FFEBEB; border-bottom: 1px #F1B4A8 solid; }
+			#IndexList .Sidebar #NewGroup ul { padding: 7px 10px; }
+				#IndexList .Sidebar #NewGroup ul li { list-style: disc inside none; font-size: 10px; color: #999; }
+					#IndexList .Sidebar #NewGroup ul li a { padding: 0 10px 0 0; font-size: 12px; }
+
+#IndexList .MainBody { float: right; width: 570px; }
+#IndexList .MainBody hr { height: 1px; color: #999; }
+#IndexList .MainBody .List_table thead{background: #FFFCF4; border: 1px #F1E4A8 solid;}
+#IndexList .MainBody #showpage { padding: 2px 0 4px 0; background: #FFFCF4; border: 1px #F1E4A8 solid; text-align: center;  }
+
+/* ----------------------------------- 头 #Footer -- */
+#Footer { margin: 10px auto auto auto; width: 720px; height: 1px; border-top: 1px #ccc solid; }
+

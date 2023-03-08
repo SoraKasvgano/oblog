@@ -1,0 +1,37 @@
+#oblog_ubb{
+	border: 1px solid #ccc;
+	width:400px;}
+#oblog_ubb .oblog_ubbtoolbar{
+	background-color:#F0F0EE;
+	border-bottom:1px solid #ccc;
+	padding:5px;	
+}
+#oblog_ubb .oblog_ubbtext{
+	width:100%;
+	border:none;
+	overflow-y:auto;
+	overflow-x:none;
+	padding:2;
+	word-spacing:inherit;
+}
+#oblog_ubbemot{
+	VISIBILITY: hidden; 
+	POSITION: absolute; 
+	TEXT-ALIGN: left;
+	border:1px solid #ccc;
+	background-color:#F0F0EE;
+	width:280px;
+	
+}
+#oblog_ubb a:link{
+	border:1px solid #F0F0EE;
+	padding:2px;
+}
+#oblog_ubb a:visited {
+	border:1px solid #F0F0EE;
+	padding:2px;
+}
+#oblog_ubb a:hover {
+	border:1px solid #0A246A;
+	padding:2px;
+}

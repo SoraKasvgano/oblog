@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu path="album_xml/">
+	<l n="默认花边" p="k1.xml"/>
+	<l n="永恒爱情" p="k2.xml"/>
+	<l n="星座物语" p="k3.xml"/>
+	<l n="可爱卡通" p="k4.xml"/>
+	<l n="超级明星" p="k5.xml"/>
+</menu>

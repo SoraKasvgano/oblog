@@ -1,0 +1,89 @@
+/* 全局 */
+div,ul,form,table {font-size:12px;margin:0;}
+li {list-style:none outside;}
+body {
+color: #333;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+line-height: 150%;
+background:#CCC;
+text-align:center;
+}
+a:link{font-size: 12px;text-decoration:none;color:#333;}
+a:visited {text-decoration:none;color:#333;}
+a:hover {text-decoration:underline;color:#666;}
+a:active {text-decoration:none;color:#666;}
+/* 常用属性 */
+.left {float:left;}
+.right {float:right;}
+/* -- 登陆口 Login.asp -- */
+#Login {margin:50px auto 0 auto;width:400px;background:#424242 url("Login_bg.png") no-repeat left top;text-align:left;color:#fff;border-top:1px #000 solid;border-bottom:1px #000 solid;}
+#Login #ver {margin:116px 0 0 10px!important;margin:114px 0 0 10px;font-size:10px;font-family:verdana,tahoma,Arial,Helvetica,sans-serif;}
+*+html #Login #ver {margin:114px 0 0 10px!important;}/* IE7 hack */
+#Login fieldset {border:none;}
+#Login fieldset legend {display:none;}
+#Login fieldset ul {margin:0;padding:15px 30px;}
+#Login fieldset ul li {margin:0 0 6px 0;}
+#Login fieldset ul li input#username,input#password {height:16px;background:#fff;border:1px #000 solid;}
+#Login fieldset ul li input#codestr {height:20px;width:50px;font-size:14px;font-weight:600;background:#fff;border:1px #000 solid;font-family:Century Gothic,verdana,tahoma,Arial,Helvetica,sans-serif;}
+#Login fieldset ul li input#Submit {margin:0 0 0 65px;height:25px;}
+#Login fieldset ul li.hr {border:1px #000 solid;}
+#Login fieldset ul li img {margin:1px 0 0 0!important;margin:2px 0 0 0;width:64px;height:20px;}
+*+html #Login fieldset ul li img {margin:2px 0 0 0!important;}/* IE7 hack */
+
+/* admin_index_left */
+#TabPage1 {width:180px;margin:0 0 0 3px;}
+ul.left_top {width:156px;background:#fff;text-align:left;cursor:pointer;margin:0 0 0 -40px!important;margin:0;}
+ul.left_top li {float:left;}
+ul.left_top li.left_top_left {padding:8px 0 0 22px;height:20px;width:124px!important;width:146px;font-weight:900;color:#fff;background: url("admin_top_left.png") no-repeat 0 0;}
+ul.left_top li.left_top_right {height:27px;width:10px;background: url("admin_top_right.png") no-repeat 0 0;}
+
+ul.left_conten {clear:both;padding:5px 0 0 7px;width:153px;text-align:left;background: url("left_conten.png") repeat-y left top;}
+ul.left_conten li {line-height:1.8;list-style:square inside;}
+ul.left_conten a.Selected {padding:5px 6px 2px 6px;color:#333;border:1px #ccc solid;background:#fff;text-decoration:none;}
+ul.left_conten li a {padding:0 7px 0 7px;}
+ul.left_conten li a:hover {padding:5px 6px 2px 6px;color:#333;border:1px #ccc solid;background:#FFf;text-decoration:none;}
+
+div.left_top {width:160px;height:15px;background: url("left_top.png") no-repeat left bottom;}
+div.left_end {clear:both;width:160px;height:15px;background: url("left_end.png") no-repeat left top;}
+/* admin_index_main */
+#main_body {width:96%;margin:0 auto;}
+
+ul.main_top {width:auto!important;width:100%;height:27px;font-size:14px;font-weight:900;color:#fff;background: url("admin_top_left.png") no-repeat 0 0;}
+ul.main_top li.main_top_left {padding:7px 0 0 22px;height:20px;}
+ul.main_top li.main_top_right {height:27px;width:10px;background: url("admin_top_right.png") no-repeat 0 0;}
+
+div.main_content_rightbg {width:auto;padding:0 3px 0 0;background: url("main_content_rightbg.png") repeat-y right top;}
+div.main_content_leftbg {line-height:1.8;padding:10px 12px 0 15px;background:#fff url("main_content_leftbg.png") repeat-y left top;}
+div.main_content_leftbg a {text-decoration:underline;}
+div.main_content_leftbg table {width:100%!important;width:96%;margin:0!important;margin:0 -30px 0 -30px;background:#eee;}
+
+div.main_content_leftbg #textarea table {width:auto;margin:0;background:#fff;}
+div.main_content_leftbg #textarea table td {line-height:1.0;padding:0;}
+
+div.main_content_leftbg table td {background:#fff;line-height:1.8;padding:3px 10px;}
+div.main_content_leftbg table td.topbg {padding:0;font-size:13px;color:#000;text-align:left;background: url("main_content_topbg.png") repeat-x left top;border:1px #999 solid;margin:-1px;}
+div.main_content_leftbg table td.topbg strong {padding:0 0 0 10px;display:block;border:1px #fff solid;}
+div.main_content_leftbg table td.topbg b {padding:0 0 0 10px;display:block;border:1px #fff solid;}
+div.main_content_leftbg table td.topbg1 {padding:4px 10px 0 0;font-size:13px;color:#000;text-align:right;background: url("main_content_topbg.png") repeat-x left top;border:1px #999 solid;margin:-1px;}
+
+ul.main_end {background: url("main_end_left.png") no-repeat 0 0;height:20px;}
+ul.main_end li.main_end_right {height:20px;width:10px;background: url("main_end_right.png") no-repeat 0 0;}
+
+div.progress1 {
+	height: 20px;
+	width: 400px;
+	border: 1px solid #000;
+	background-color: #fff;
+	text-align: left;
+	MARGIN-top:15px;
+	margin-bottom: 5px;
+}
+div.progress2 {
+	height: 20px;
+	border: 0px none;
+	background: url("main_content_topbg.png") repeat-x left top;
+	MARGIN: 1px 1px 1px 1px;
+	text-align: left;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+<script language=JavaScript src='scripts/language/schi/editor_lang.js'></script>
+  <!--
+  Or you can specify certain language directly using (for example) :
+  <script language=JavaScript src='/editor/scripts/language/german/editor_lang.js'></script>
+  -->
+
+  <script language=JavaScript src='scripts/innovaeditor.js'></script>
+ <form method="post" action="default.asp" id="Form1">
+	<span id="loadedit" style="font-size:12px"><img src='../images/loading.gif' align='absbottom'> 正在载入编辑器...</span>
+    <textarea id="txtContent" name="txtContent" rows=4 cols=30>
+  </textarea>
+
+  <script>
+    var oEdit1 = new InnovaEditor("oEdit1");
+
+    //STEP 2: Asset Manager Localization: Add querystring lang=english/danish/dutch...
+	//oEdit1.css="/editor/scripts/style/editor.css"
+	oEdit1.width=600;
+	oEdit1.height=260;
+	oEdit1.cmdCustomObject = "modelessDialogShow('/oblog4/editor/scripts/emot.htm',280,200)"; 
+   oEdit1.cmdAssetManager="modalDialogShow('/oblog4/editupload.asp',640,465)";
+    oEdit1.REPLACE("txtContent");
+	oEdit1.focus();
+  </script>
+<form
+><body>
+</body>
+</html>

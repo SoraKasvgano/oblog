@@ -1,0 +1,1 @@
+if (window.navigator.userAgent.indexOf("Firefox")>=1)document.getElementById("chk_idAll").style.height=document.body.offsetHeight-18+"px"

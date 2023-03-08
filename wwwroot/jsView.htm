@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> JS调用演示 </title>
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link href="OblogStyle/OblogsysDefault4.css" rel="stylesheet" type="text/css" />
+<link href="skin/4.1_DefaultSysSkin/css.css" rel="stylesheet" type="text/css" />
+ </head>
+
+ <body>
+<br>
+<table cellpadding="5" cellspacing="1" border="0" class="tableBorder2" align="center" height="85%">
+<tr><th height="23">JS调用效果测试</th></tr>
+<tr>
+<td height="*" class="tablebody1" valign="top">
+<div class="quote">
+调用代码： <font class="redfont" id="scriptcode"></font>
+<input type="hidden" name="NewScript" id="NewScript">
+<input type="button" value="拷贝调用代码" onclick="oCopy(document.getElementById('NewScript'));">
+<input type="button" value="调试错误" onclick="top.location='jsNew.asp?'+para;">
+</div>
+<font color="gray">以下为查看的调用效果：</font>
+<hr size=1>
+<script language="JavaScript">
+<!--
+var para = getpara();
+var Script = '<script src="'+window.location.href.replace("jsView.htm?"+para,"")+'jsNew.asp?'+para+'"><\/script>';
+document.getElementById("scriptcode").innerText = Script;
+document.getElementById("NewScript").value = Script;
+document.write(Script);
+function oCopy(obj){
+	obj.select();
+	var js=obj.createTextRange();
+	js.execCommand("Copy");
+}
+function getpara(){
+	var str,parastr
+	str = window.location.search;
+	parastr = str.substring(1);
+	return parastr;
+}
+//-->
+</script>
+</td>
+</tr>
+</table>
+<p></p>
+<center><button onclick="window.close();">关闭窗口</button></center>
+ </body>
+</html>

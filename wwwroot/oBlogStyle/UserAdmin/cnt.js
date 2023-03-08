@@ -1,0 +1,1 @@
+if (window.navigator.userAgent.indexOf("Firefox")>=1)document.getElementById("cnt").style.height=document.body.offsetHeight-82+"px"

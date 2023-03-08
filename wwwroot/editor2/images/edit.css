@@ -1,0 +1,121 @@
+#oblog_edit div.quote{
+	margin: 5px 20px;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	background: #F3F3F3;
+	line-height: normal;
+}
+#oblog_edit a { color: #000; text-decoration: none; }
+#oblog_edit a:hover { color: #000;text-decoration: none; }
+#oblog_edit li{
+	display: inline;
+	padding: 0;
+	text-align:center;
+	margin:-2px!important;
+	margin:0px;
+}
+#oblog_edit ul{
+	margin: 3px;
+	text-align: left;
+	width: 100%;
+	padding:0;
+}
+#oblog_edit ul#ExtToolbar2{ display: none; }
+#oblog_edit ul.PostiFrame{ height:300px }
+#oblog_edit iframe.oblog_Composition {border: 2px inset; }
+#oblog_edit .oblog_Reply { border : 1px dashed buttonface; }
+#oblog_edit .yToolbar { }
+#oblog_edit .oblog_Btn
+{
+	Text-align: center;
+	HEIGHT: 23px;
+	WIDTH: 27px;
+	margin-top: 0px;
+	padding-top: 5;
+}
+#oblog_edit .oblog_BtnMouseOverUp
+{
+	background-color : #fff;
+	Text-align: center;
+	cursor: hand;
+	HEIGHT: 22px;
+	WIDTH: 27px;
+	margin-top: 0px;
+	padding-top: 2px;
+	border: 1px #fff solid;
+	border-right: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+
+}
+#oblog_edit .oblog_Ico { cursor: pointer; }
+#oblog_edit .oblog_TBGen
+{
+	FONT: 8pt "verdana", "arial", "sans-serif";
+	margin: 0px;
+}
+
+#oblog_edit .oblog_BtnMouseOverDown
+{
+	Text-align: center;
+	cursor: pointer;
+	HEIGHT: 22px!important;
+	WIDTH: 22px!important;
+}
+
+#oblog_edit .BtnDown
+{
+	background-color:  #8592b5;
+	cursor: pointer;
+	Text-align: center;
+}
+
+#oblog_edit .oblog_IcoDown{ cursor: pointer; }
+
+#oblog_edit .oblog_IcoDownPressed { cursor: pointer; }
+#oblog_edit #oblog_Tab .MinusAndPlus { float: right; margin: -22px 0 0 0; padding: 0 5px 0 0; }
+#oblog_edit li.oblog_TabOn {
+	height: 24px;
+	font-size: 12px; 
+	padding: 3px 8px 0 8px; 
+	border:1px inset;
+	background-color: #EEEEEE;
+}
+
+#oblog_edit li.oblog_TabOff {
+	height: 24px;
+	font-size: 12px; 
+	padding: 3px 8px 0 8px; 
+	cursor: pointer;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #848284;
+	border-bottom: 1px solid #848284;
+	border-left: 1px solid #FFFFFF;
+}
+#oblog_edit li.oblog_SmileOn {
+	font: 9pt MS Sans Serif;
+	border:1px inset;
+	background-color: #FFD988;
+	cursor: pointer;
+}
+
+#oblog_edit li.oblog_SmileOff { font: 9pt MS Sans Serif; }
+#oblog_edit img {border:0;}
+#oblog_edit div.HtmlCode{
+	margin:5px 20px;
+	border:1px solid #CCCCCC;
+	padding:5px;
+	background:#FDFDDF;
+	font-size:14px;
+	font-family:Tahoma;
+	font-style : oblique;
+	line-height : normal ;
+	font-weight:bold;
+}
+#oblog_edit
+{
+	background-color:#EEEEEE;
+	border:1px solid #CCCCCC;
+	margin: 0px;
+	text-align: left;
+	width: 590px;
+}

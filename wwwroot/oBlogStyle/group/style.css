@@ -1,0 +1,295 @@
+/* ============全局============ */
+html {height:100%;word-break:break-all;}
+div,ul,ol {margin:0;padding:0;}
+form {margin:1px 0 0 0;}
+img {border:0;}
+li {list-style:none;}
+table {font-size:12px;}
+input {font-family:Arial,Helvetica,sans-serif;font-size:12px;}
+
+body {
+margin:0;
+padding:0;
+font-size:12px;
+height:100%;
+background:#fff;
+line-height:1.5;
+font-family:Arial,Helvetica,sans-serif;
+text-align:center;
+}
+
+a:link{text-decoration:none;color:#1F446C;}
+a:visited {text-decoration:none;color:#1F446C;}
+a:hover {text-decoration:underline;color:#000;}
+a:active {text-decoration:underline;color:#000;}
+/* ============常用============ */
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.none {display:none;}
+
+.grey {color:#999;}
+.blue {color:#115888;}
+.green {color:#096;}
+.red {color:#f00;}
+/* ============布局============ */
+.Square {margin:0 0 10px 0;background:#F0F8FD url("Square.png") repeat-x left top!important;background:#F0F8FD url("Square.png") repeat-x left 1px;border:1px #5FAED7 solid;}
+.Square .title {height:24px;padding:3px 0 0 10px;letter-spacing:2px;font-size:14px;font-weight:600;color:#1F446C;}
+*+html .Square {background:#F0F8FD url("Square.png") repeat-x left 1px!important;}/* IE7 hack */
+
+#Container .PageBody .MainBody .MainBody .Square {margin:0 10px 10px 10px;background:#fff url("Square.png") repeat-x left top!important;background:#fff url("Square.png") repeat-x left 1px;border:1px #5FAED7 solid;}
+*+html #Container .PageBody .MainBody .MainBody .Square {background:#fff url("Square.png") repeat-x left 1px!important;}/* IE7 hack */
+
+.UserList {float:left;margin:0 5px 10px 8px!important;margin:0 5px 10px 4px;}
+.UserList li.userimg {padding:1px;width:56px;height:56px;background:url("User.png") no-repeat left top;}
+.UserList li.userimg img {width:48px;height:48px;}
+.UserList li.username {text-align:center;padding:0 0px 0 0;width:56px!important;width:60px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.UserList li.username a {font-size:12px;}
+
+
+#Header {clear:both;width:960px;margin:auto;text-align:left;}
+#Header #BlogMenu {text-align:right;margin:10px;}
+#Header #BlogMenu a {color:#000;}
+#Header #GroupBanner {height:110px;background:#CBECFF url("GroupBanner.jpg") no-repeat left top;}
+#Header #GroupTitle {float:left;margin:20px 0 0 20px;padding:10px 60px 10px 10px;border:1px #5FAED7 solid;background:#fff;font-size:16px;font-weight:600;filter:alpha(opacity=75);}
+#Header #GroupTitle a {display:block;margin:10px 0 0 0;font-size:13px;font-weight:400;font-style:italic;}
+#Header #Menu {margin:10px 0;height:43px;background:#CBECFF url("Menu.gif") repeat-x left top;}
+#Header #Menu ul {padding:12px 0 27px 70px;background:url("menubg.jpg") no-repeat left top;}
+#Header #Menu ul li {float:left;margin:0 8px;}
+#Header #Menu ul li a {font-size:14px;color:#000;}
+#Header #Menu ul li a:hover {color:#1F446C;}
+
+#Container {clear:both;text-align:center;width:940px;margin:auto;}
+#Container .PageBody {text-align:left;}
+#Container .PageBody .Sidebar {float:left;width:230px;overflow:hidden;}
+#Container .PageBody .MainBody {float:right;width:710px;overflow:hidden;}
+#Container .PageBody .MainBody .Sidebar {float:right;width:230px;overflow:hidden;}
+#Container .PageBody .MainBody .MainBody {float:left;width:480px;overflow:hidden;}
+
+#Container .PageBodyList {text-align:left;width:940px;margin:auto!important;margin:0 0 0 10px;}
+#Container .PageBodyList .Sidebar {float:left;width:230px;overflow:hidden;}
+#Container .PageBodyList .MainBody {float:right;width:700px;overflow:hidden;}
+
+#Footer {clear:both;text-align:left;width:960px;margin:auto;border-top:2px #5FAED7 solid;}
+
+/* ============副模板============ */
+/* -- 副模板布局 -- */
+#Container .PageBodyList .MainBody #GroupList {margin:0 0 10px 0;background:#fff url("Square.png") repeat-x left top!important;background:#fff url("Square.png") repeat-x left 1px;border:1px #5FAED7 solid;}
+*+html #Container .PageBodyList .MainBody #GroupList {background:#fff url("Square.png") repeat-x left 1px!important;}/* IE7 hack */
+#Container .PageBodyList .MainBody #GroupList .title {height:24px;padding:3px 0 0 10px;letter-spacing:2px;font-size:14px;font-weight:600;color:#1F446C;}
+
+/* -- 副模板内容 -- */
+/* -- 文章列表 -- */
+#GroupLogList {border-collapse:collapse;border:none;width:100%;}
+#GroupLogList thead {background:#CFEAF7;}
+#GroupLogList thead tr th {padding:2px 0 0 0;border-bottom:1px #88C5E1 solid;text-align:center;font-weight:400;line-height:1.2;}
+#GroupLogList thead tr th.t1 {width:30px;}
+#GroupLogList thead tr th.t2 {padding:2px 0 0 0;border-right:1px #88C5E1 solid;text-align:left;}
+#GroupLogList thead tr th.t2 {width:50px;border-right:1px #88C5E1 solid;}
+#GroupLogList thead tr th.t3 {width:100px;border-right:1px #88C5E1 solid;}
+#GroupLogList thead tr th.t4 {width:80px;border-right:1px #88C5E1 solid;}
+#GroupLogList thead tr th.t5 {width:100px;}
+#GroupLogList tbody {}
+#GroupLogList tbody tr {}
+#GroupLogList tbody tr.r1 {background:#fff;}
+#GroupLogList tbody tr.r2 {background:#F0F8FD;}
+#GroupLogList tbody tr td {text-align:center;}
+#GroupLogList tbody tr td.t1 {}
+#GroupLogList tbody tr td.t2 {text-align:left;}
+#GroupLogList tbody tr td.t3 {}
+#GroupLogList tbody tr td.t3 span {display:block;font-size:10px;}
+#GroupLogList tbody tr td.t5 span {display:block;font-size:10px;}
+/* -- 翻页 -- */
+#GroupPages {clear:both;background:#CFEAF7;border-top:1px #88C5E1 solid;padding:0 3px 2px 3px;text-align:right;}
+#GroupPages a {font-size:10px;border:1px #7CBCEB solid;background:#fff;padding:1px 6px 0px 6px;color:#165E92;}
+#GroupPages a:hover {background:#4E95C5;color:#fff;}
+#GroupPages .activePage a {background:#4E95C5;color:#fff;}
+#GroupPages .activePage a:hover {background:#fff;color:#165E92;}
+/* -- 文章内容 -- */
+#Log_List .LogList .LogTitle {padding:4px 0 2px 24px;background:#CFEAF7 url("01.gif") no-repeat 6px 4px;border-bottom:1px #88C5E1 solid;font-weight:600;}
+#Log_List .LogList table {border-collapse:collapse;width:100%;}
+#Log_List .LogList table tr td {vertical-align:top;}
+#Log_List .LogList table tr td.t1 {width:110px;background:#F0F8FD;border-right:1px #CFEAF7 solid;text-align:center;}
+#Log_List .LogList table tr td.t1 .User {margin:30px 5px 10px 8px!important;margin:30px 5px 10px 4px;}
+#Log_List .LogList table tr td.t1 .User li.userimg {margin:auto;padding:1px;width:56px;height:56px;background:url("User.png") no-repeat left top;text-align:left;}
+#Log_List .LogList table tr td.t1 .User li.userimg img {width:48px;height:48px;}
+#Log_List .LogList table tr td.t1 .User li.username {text-align:center;}
+#Log_List .LogList table tr td.t1 span {display:block;padding:5px 0 0 0;border-top:1px #CFEAF7 solid;color:#f00;}
+#Log_List .LogList table tr td.t2 .AddTime {display:block;padding:1px 10px 1px 10px;background:#F0F8FD;border-bottom:1px #CFEAF7 solid;color:#555;}
+#Log_List .LogList table tr td.t2 .Content {padding:15px;width:550px;overflow-x:hidden;font-size:14px;}
+#Log_List .LogList table tr td.t2 .More {display:block;padding:3px 10px 2px 10px;background:#F0F8FD;border-top:1px #CFEAF7 solid;}
+#Log_List .LogList table tr td.t2 .More a {padding:2px 6px 0px 6px;border:1px #88C5E1 solid;background:#fff;}
+#Log_List .LogList table tr td.t2 .More a:hover {background:#4E95C5;color:#fff;}
+
+
+#Log_List .CommentsList .CommentsTitle {padding:4px 0 2px 24px;background:#CFEAF7 url("comment.gif") no-repeat 6px 6px;border-top:1px #88C5E1 solid;}
+#Log_List .CommentsList table {border-collapse:collapse;width:100%;}
+#Log_List .CommentsList table tr td {vertical-align:top;}
+#Log_List .CommentsList table tr td.t1 {width:110px;background:#F0F8FD;border-right:1px #CFEAF7 solid;text-align:center;}
+#Log_List .CommentsList table tr td.t1 .User {margin:30px 5px 10px 8px!important;margin:30px 5px 10px 4px;}
+#Log_List .CommentsList table tr td.t1 .User li.userimg {margin:auto;padding:1px;width:56px;height:56px;background:url("User.png") no-repeat left top;text-align:left;}
+#Log_List .CommentsList table tr td.t1 .User li.userimg img {width:48px;height:48px;}
+#Log_List .CommentsList table tr td.t1 .User li.username {text-align:center;}
+#Log_List .CommentsList table tr td.t1 span.Floors {display:block;padding:5px 0 0 0;border-top:1px #CFEAF7 solid;color:#f00;}
+#Log_List .CommentsList table tr td.t2 .AddTime {display:block;padding:1px 10px 1px 10px;background:#F0F8FD;border-bottom:1px #CFEAF7 solid;color:#555;}
+#Log_List .CommentsList table tr td.t2 .Content {padding:15px;width:550px;overflow-x:hidden;font-size:14px;}
+#Log_List .CommentsList table tr td.t2 .More {display:block;padding:3px 10px 2px 10px;background:#F0F8FD;border-top:1px #CFEAF7 solid;}
+#Log_List .CommentsList table tr td.t2 .More a {padding:2px 6px 0px 6px;border:1px #88C5E1 solid;background:#fff;}
+#Log_List .CommentsList table tr td.t2 .More a:hover {background:#4E95C5;color:#fff;}
+
+/* -- 相册内容 -- */
+#Group_Photo_List .PhotoContent {text-align:center;}
+#Group_Photo_List .PhotoContent .PhotoTitle {padding:4px 0 4px 8px;background:#CFEAF7;font-size:16px;font-weight:600;}
+#Group_Photo_List .PhotoContent .AddTime {display:block;padding:1px 10px 1px 10px;background:#F0F8FD;border-bottom:1px #CFEAF7 solid;color:#555;}
+#Group_Photo_List .PhotoContent .img {padding:20px 0;width:640px;overflow-x:hidden;}
+#Group_Photo_List .PhotoContent .img img {padding:5px;background:#F0F8FD;border:1px #CFEAF7 solid;}
+#Group_Photo_List .PhotoContent .ContentTitle {margin:0 0 10px 0;border-bottom:2px #CFEAF7 dashed;font-size:14px;color:#4E95C5;}
+#Group_Photo_List .PhotoContent .Content {margin:15px;padding:15px;background:#F0F8FD;border:1px #CFEAF7 solid;font-size:12px;text-align:left;}
+
+
+#Group_Photo_List .Comments {padding:4px 0 4px 8px;background:#CFEAF7;border-top:1px #88C5E1 solid;border-bottom:1px #88C5E1 solid;font-size:14px;font-weight:600;}
+#Group_Photo_List .CommentsContent {margin:20px;padding:10px;border:1px #CFEAF7 dashed;background:#F0F8FD;}
+#Group_Photo_List .CommentsContent table tr td {vertical-align:top;}
+#Group_Photo_List .CommentsContent table tr td.t1 {width:110px;background:#F0F8FD;border-right:1px #CFEAF7 solid;text-align:center;}
+#Group_Photo_List .CommentsContent table tr td.t1 .User {margin:0 5px 10px 8px!important;margin:30px 5px 10px 4px;}
+#Group_Photo_List .CommentsContent table tr td.t1 .User li.userimg {margin:auto;padding:1px;width:56px;height:56px;background:url("User.png") no-repeat left top;text-align:left;}
+#Group_Photo_List .CommentsContent table tr td.t1 .User li.userimg img {width:48px;height:48px;}
+#Group_Photo_List .CommentsContent table tr td.t1 .User li.username {text-align:center;}
+#Group_Photo_List .CommentsContent table tr td.t1 span {display:block;padding:5px 0 0 0;border-top:1px #CFEAF7 solid;color:#f00;}
+#Group_Photo_List .CommentsContent table tr td.t2 {padding:0 0 0 15px;}
+#Group_Photo_List .CommentsContent table tr td.t2 .AddTime {font-size:10px;color:#888;}
+
+
+
+/* -- 回复内容 -- */
+#form_comment {margin:0 0 10px 0;padding:0 0px;background:#F0F8FD url("Square.png") repeat-x left top!important;background:#F0F8FD url("Square.png") repeat-x left 1px;border:1px #88C5E1 solid;}
+*+html #form_comment {background:#F0F8FD url("Square.png") repeat-x left 1px!important;}/* IE7 hack */
+#form_comment .title {height:24px;padding:3px 0 0 10px;letter-spacing:2px;font-size:14px;font-weight:600;color:#1F446C;}
+
+
+
+/* -- 成员列表 -- */
+#GroupList #GroupBestUser {}
+#GroupList #GroupBestUser .UserList {width:100px!important;width:103px;height:120px;text-align:center;}
+#GroupList #GroupBestUser .UserList .userimg {margin:0 auto;text-align:left;}
+#GroupList #GroupBestUser .UserList .username {margin:0 auto;}
+#GroupList #GroupBestUser .UserList .username a {font-size:14px;}
+#GroupList #GroupBestUser .UserList .usercity {font-size:12px;color:#777;}
+
+/* -- 申请加入 -- */
+#join fieldset {border:none;}
+#join fieldset legend {margin:20px 0;font-weight:600;}
+#join fieldset table {margin:0 0 20px 20px;}
+#join fieldset table table {margin:auto;}
+#join fieldset table tr td {vertical-align:top;}
+#join fieldset table tr td label {display:block;padding:3px 0 0 0;}
+#join fieldset table tr td input#Submit {height:30px;}
+/* -- 发布新帖 -- */
+#commentform fieldset {border:none;}
+#commentform fieldset legend {margin:20px 0;font-weight:600;}
+#commentform fieldset table {margin:0 0 20px 20px;}
+#commentform fieldset table table {margin:0;}
+#commentform fieldset table tr td {vertical-align:top;}
+#commentform fieldset table tr td label {display:block;padding:3px 0 0 0;}
+#commentform fieldset table tr td input#Submit {height:30px;}
+/* -- 发布相片 -- */
+#d_file {width:100%;}
+/* -- 圈子信息 -- */
+#Group_Info {padding:0 0 20px 0;}
+#Group_Info fieldset {border:none;padding:0 20px;}
+#Group_Info fieldset legend {display:block;margin:10px 0;border-bottom:2px #694659 dotted;font-size:14px;font-weight:600;}
+#Group_Info fieldset .Group_Data {}
+#Group_Info fieldset .Group_Data img {padding:5px;background:#F0F8FD;border:1px #5FAED7 solid;}
+#Group_Info fieldset .GroupAdmin {float:left;margin:0 20px 20px 0;padding:10px;width:120px;height:110px;background:#F0F8FD;border:1px #5FAED7 solid;overflow:hidden;}
+#Group_Info fieldset .GroupAdmin li.Adminimg {margin:0 10px 0 0;padding:1px;width:56px;height:56px;background:url("User.png") no-repeat left top;}
+#Group_Info fieldset .GroupAdmin li.Adminname {text-align:center;width:110px!important;width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#Group_Info fieldset .GroupAdmin li.Adminname a {font-size:12px;font-weight:600;}
+#Group_Info fieldset .GroupAdmin li.Admincity {margin:10px 0 0 0;}
+/* -- 浏览相册 -- */
+#Photo_List {padding:20px 0 20px 0;}
+#Photo_List .PhotoList {float:left;margin:0 0 0px 20px!important;margin:0 0 5px 15px;width:114px;height:125px;overflow:hidden;text-align:center;}
+#Photo_List .PhotoList li {}
+#Photo_List .PhotoList li.Photoimg {margin:6px 0 0 0;}
+#Photo_List .PhotoList li.Photoimg img {width:100px;height:75px;padding:2px;background:#F0F8FD;border:1px #CFEAF7 solid;}
+#Photo_List .PhotoList li.PhotoTitle {width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#Photo_List .PhotoList li.PhotoUser {width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#Photo_List .PhotoList li.PhotoUser a {color:#999;}
+
+
+
+/* ============模板标签============ */
+/* -- 圈子资料 -- */
+#GroupInfo {margin:10px;}
+#GroupInfo ul.Groupico {margin:0 0 10px 0;}
+#GroupInfo ul.Groupico li {font-size:14px;}
+#GroupInfo ul.Groupico li img {padding:5px;background:#fff;border:1px #5FAED7 solid;}
+#GroupInfo ul.Groupico li {font-weight:600;}
+#GroupInfo ul.Groupico li span {font-weight:400;}
+#GroupInfo div.GroupIntro {margin:0 0 10px 0;padding:5px;background:#fff;}
+#GroupInfo div.GroupIntro p {margin:0;text-indent:24px;color:#555;}
+#GroupInfo ul.GroupData li {list-style:square;margin:3px 0 3px 20px;}
+
+/* -- 最新回复 -- */
+#GroupComments {margin:10px;}
+#GroupComments li {margin:5px 0!important;margin:-5px 0;padding:0 0 0 17px;background:url("comment.gif") no-repeat left 2px;}
+#GroupComments li a {font-size:12px;}
+#GroupComments li span.user {display:block;color:#45A420;}
+#GroupComments li span.user span.time {font-size:9px;color:#777;}
+
+/* -- 友情链接 -- */
+#GroupLinks {margin:10px;}
+#GroupLinks p {margin:0;}
+
+/* -- 公告 -- */
+#GroupPlacard {margin:10px;}
+#GroupPlacard p {margin:0;}
+
+/* -- 管理员 -- */
+#GroupAdmin {margin:10px;font-size:14px;}
+#GroupAdmin .GroupAdmin {height:55px;padding:10px;background:#fff;border:1px #CFEAF7 solid;}
+#GroupAdmin .GroupAdmin li.Adminimg {float:left;margin:0 10px 0 0;padding:1px;width:56px;height:56px;background:url("User.png") no-repeat left top;}
+#GroupAdmin .GroupAdmin li.Adminname {text-align:center;width:100px!important;width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#GroupAdmin .GroupAdmin li.Adminname a {font-size:12px;font-weight:600;}
+#GroupAdmin .GroupAdmin li.Admincity {margin:10px 0 0 0;}
+
+/* -- 活跃成员 -- */
+#GroupBestUser {margin:10px 0 10px 10px;font-size:14px;}
+
+
+/* -- 最新成员 -- */
+#GroupNewUser {margin:10px 0 10px 10px;font-size:14px;}
+
+
+/* -- 最新文章 -- */
+#LogList {border-collapse:collapse;border:none;width:100%;}
+#LogList thead {background:#CFEAF7;}
+#LogList thead tr th {padding:2px 0 0 0;border-bottom:1px #88C5E1 solid;text-align:center;font-weight:400;line-height:1.2;}
+#LogList thead tr th.t1 {padding:2px 0 0 20px;border-right:1px #88C5E1 solid;text-align:left;}
+#LogList thead tr th.t2 {width:50px;border-right:1px #88C5E1 solid;}
+#LogList thead tr th.t3 {width:100px;}
+#LogList tbody {}
+#LogList tbody tr {}
+#LogList tbody tr.r1 {background:#fff;}
+#LogList tbody tr.r2 {background:#F0F8FD;}
+#LogList tbody tr td {}
+#LogList tbody tr td.t1 {padding:0 0 0 10px;}
+#LogList tbody tr td.t2 {text-align:center;}
+#LogList tbody tr td.t3 {text-align:center;}
+#LogList tbody tr td.t3 span {display:block;font-size:9px;}
+
+.LogMore {padding:2px 5px 0 0;border-top:1px #CFEAF7 dashed;text-align:right;}
+
+
+/* -- 最新相片 -- */
+#GroupNewPhoto {padding:10px 0;}
+.PhotoList {float:left;width:114px;height:120px;overflow:hidden;text-align:center;}
+.PhotoList li {}
+.PhotoList li.Photoimg {}
+.PhotoList li.Photoimg img {width:95px;height:70px;padding:2px;background:#fff;border:1px #CFEAF7 solid;}
+.PhotoList li.PhotoTitle {width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.PhotoList li.PhotoUser {width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.PhotoList li.PhotoUser a {color:#999;}
+/* -- 精华文章 -- */
+
+/* ============================================================================ 其他 == */
+div.quote { margin:20px 10px auto 10px; padding:5px 10px 10px 10px; background: #ffe; border:none; border:1px #fc6 solid; }

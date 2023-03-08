@@ -1,0 +1,101 @@
+body
+{
+	text-decoration: none;
+	text-decoration: none;
+    background: #c5d5b7;
+	margin: 0px;
+	font: 14px/150% "arial", "helvetica", "sans-serif";
+	scrollbar-face-color: #c5d5b7;	
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-3dlight-color: #c5d5b7;
+	scrollbar-arrow-color: #006600;
+	scrollbar-track-color: #999966;
+	scrollbar-darkshadow-color: #c5d5b7;
+	color: #006600;
+}
+td
+{
+	font-family: "arial", "helvetica", "sans-serif";
+	font-size: 9pt;
+}
+input
+{
+	font-size: 9pt;
+	height: 20px;
+	font-family: "arial", "helvetica", "sans-serif";
+}
+button
+{
+	font-size: 9pt;
+	height: 20px; 
+}
+select
+{
+	font-size: 9pt;
+	height: 20px;
+}
+a
+{
+	text-decoration: none;
+	color: #000000;
+
+}
+a:hover
+{
+	color: #009900;
+	text-decoration: underline;
+
+}
+.title
+{
+	background:#96aa82;
+	font-size: 14px;
+	font-weight: normal;
+	color: #ffffff;
+}
+.border
+{
+	border: 1px dashed #009900;
+}
+.tdbg{
+	background:#dfe2d6;
+	line-height: 120%;
+}
+.topbg
+{
+	background:#9da48e;
+	color: #ffffff;
+	font: normal 14px "tarial", "helvetica", "sans-serif";
+	text-align: center;
+
+}
+.topbg1
+{
+	background:#9da48e;
+	color: #ffffff;
+	font: normal 14px "tarial", "helvetica", "sans-serif";
+	text-align: right;
+
+}
+.bgcolor {
+	background-color: #bfc1ae;
+}
+img {
+	border: 0px none;
+}
+.progress1{
+	height: 20px;
+	width: 400px;
+	border: 1px solid #104a7b;
+	text-align: left;
+	margin-top:50px;
+	margin-bottom: 5px;
+}
+.progress2{
+	height: 20px;
+	border: 0px none;
+	background-color: #76d769;
+	margin: 1px 1px 1px 1px;
+	text-align: left;
+}

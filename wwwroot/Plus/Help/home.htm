@@ -1,0 +1,186 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>oBlog Mail2Blog</TITLE>
+<META content="MSHTML 6.00.3790.2577" name=GENERATOR>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+.STYLE1 {font-family: "Times New Roman", Times, serif}
+.STYLE2 {color: #0000CC}
+.STYLE3 {color: #FF0000}
+BODY {
+	FONT-SIZE: 12px; MARGIN: 10px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+DIV#nav {
+	MARGIN-BOTTOM: -5px
+}
+DIV#nav H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN-BOTTOM: -10px
+}
+DIV#nav UL {
+	PADDING-LEFT: 10px; MARGIN: 0px; PADDING-TOP: 16px; LIST-STYLE-TYPE: none
+}
+A {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+DIV#header H1 {
+	FONT-SIZE: 30px; COLOR: #000099; BORDER-BOTTOM: #336699 1px solid
+}
+DIV#header H2 {
+	DISPLAY: none; FONT-SIZE: 12px
+}
+DIV#header H3 {
+	DISPLAY: none; FONT-SIZE: 12px
+}
+
+DIV#body {
+	MARGIN-BOTTOM: 40px; LINE-HEIGHT: 130%
+}
+DIV#body H1 {
+	FONT-SIZE: 24px; COLOR: #000099; BORDER-BOTTOM: #336699 1px dotted
+}
+DIV#body H2 {
+	FONT-SIZE: 20px; COLOR: #000099; BORDER-BOTTOM: #336699 1px dotted
+}
+DIV#body H3 {
+	FONT-SIZE: 16px; COLOR: #000099; BORDER-BOTTOM: #336699 1px dotted
+}
+DIV#body H4 {
+	FONT-SIZE: 14px; COLOR: #000099
+}
+
+DIV#body TD {
+	FONT-SIZE: 12px
+}
+DIV#body TH {
+	FONT-SIZE: 12px
+}
+-->
+</style>
+</HEAD>
+<BODY topmargin=10px>
+<DIV class=header id=header>
+	<p>&nbsp;</p>
+<H1>oBlog 插件开发文档</H1>
+</DIV>
+<DIV class=body id=body>
+<a name="1">
+<H2 class="STYLE1">Oblog 插件开发基本规范</H2>
+</A> 
+<P>inc/Class_sys.asp文件为系统主体文件，各文件中应增加对其的引用及使用<br>
+页面头部增加&lt;!--#include file=&quot;inc/class_sys.asp&quot;--&gt;<br>
+  使用时，需根据插件文件与该文件的相对位置进行调整<br>
+  在使用该文件中的功能时，需声明实例，并执行start<br>
+<%
+  Dim oblog <br>
+  Set oblog=New class_sys <br>
+oblog.start<br>
+%&gt;<br>
+使用完毕后，需释放该实例<br>
+&lt;%<br>
+Set oblog=Nothing <br>
+%&gt;</P>
+<a name="2"><H2>如何判断用户是否登录?</H2></A> 
+<p>  If oblog.checkuserlogined() Then<br>
+  ' 操作代码<br>
+  End If<br>
+</p>
+ 
+<a name="3">
+<H2>如何获得登录用户的信息？</H2>
+</A> 
+<table width="330" border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <th width="129" align="left" scope="col">用户ID</th>
+    <th width="195" scope="col">oblog.l_uid</th>
+  </tr>
+  <tr>
+    <th align="left" scope="row">用户帐号</th>
+    <td>oblog.l_uname</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">用户积分</th>
+    <td>oblog.l_uScores</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">用户IP</th>
+    <td>oblog.userip</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">用户日志数目</th>
+    <td>oblog.l_ulogcount</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">用户留言数目</th>
+    <td>oblog.l_uMessageCount</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">用户评论数目</th>
+    <td>oblog.l_uCommentCount</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a name="4"></A></p>
+<p>如何判断是否为系统管理员？</p>
+<p>If Session(&quot;adminname&quot;)&lt;&gt;&quot;&quot; Then</p>
+<a name="5">
+<H2>如何判断是否为内容管理员？</H2>
+</A> 
+<p>If Session(&quot;m_name&quot;)&lt;&gt;&quot;&quot; Then</P>
+<H2><a name="6">如何套用系统前台模板(副模板)？</a></H2>
+<p>页面顶部增加对以下代码：</P>
+<p>&lt;!--#include file=&quot;inc/inc_syssite.asp&quot;--&gt;<br>
+&lt;!--#include file=&quot;inc/syscode.asp&quot;--&gt;</P>
+<p>&lt;%<br>
+call sysshow()<br>
+%&gt;</P>
+<p>此时系统全局变量G_P_Show获得模板信息<br>
+&lt;%<br>
+G_P_Show=replace(G_P_Show,&quot;$show_list$&quot;,“此处为需要组合的内容”)<br>
+  '输出页面内容及底部的版权信息等内容<br>
+Response.Write G_P_Show&amp;oblog.site_bottom<br>
+%&gt;</P>
+<H2><a name="7">如何套用用户后台模板？</a></H2>
+<p>只需在页面顶部增加<br>
+&lt;!--#include file=&quot;user_top.asp&quot;--&gt;<br>
+  <br>
+即可实现对用户身份验证及样式表的包含，样式文件的使用，请参考现有文件</P>
+<H2><a name="8">如何套用系统列表？</a></H2>
+<p>对于列表功能，系统使用了几个全局变量，在Config.asp中进行了定义<br>
+</P>
+<table width="330" border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <th width="129" align="left" scope="col">每页显示条数</th>
+    <th width="195" scope="col">G_P_PerMax</th>
+  </tr>
+  <tr>
+    <th align="left" scope="row">所有纪录数</th>
+    <td>G_P_AllRecords</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">所有页数</th>
+    <td>G_P_AllPages</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">当前页</th>
+    <td>G_P_This</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">页面名称(如果需传递参数的，需在连接中进行参数传递)</th>
+    <td>G_P_FileName</td>
+  </tr>
+  <tr>
+    <th align="left" scope="row">页面导航文字显示</th>
+    <td>G_P_Guide</td>
+  </tr>
+</table>
+<p>系统提供了两种分页方法，一种是前台页面中的宽行显示，一种是用户后台中的右上角的显示。</p>
+<a name="9"><H2 class="STYLE3">注意事项</H2>
+</A> 
+<p>本文档为草稿状态,正在逐步完善</p>
+
+<a name="6"><H2>如何获得帮助</H2></A> 
+<p>请与客服联系<a href="http://www.oblog.cn/khfw.shtml" target=_blank>http://www.oblog.cn/khfw.shtml</a></p>
+</HTML>

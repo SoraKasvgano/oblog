@@ -1,0 +1,13 @@
+form{ margin:0; }
+
+/* -- digg.asp -- */
+table.index_digg tr td {vertical-align:top;}
+table.index_digg tr td.digg_t1 { width:50px; height: 70px; }
+table.index_digg tr td.digg_t1 div.digg_list { width: 45px; height: 55px; background:  url("../Images/digg.gif") no-repeat left top; text-align: center; }
+table.index_digg tr td.digg_t1 div.digg_number { width:45px;padding: 10px 0 11px 0;font-size:18px;font-weight:600;color:#333;font-family:tahoma,Arial,Helvetica,sans-serif;line-height:1.0; }
+table.index_digg tr td.digg_t1 div.digg_submit { width: 40px; padding: 2px 0 0 3px;line-height:1.0; }
+table.index_digg tr td.digg_t1 div.digg_submit a {font-size:12px;letter-spacing: 3px; }
+table.index_digg tr td.digg_t2 div.digg_title a {font-size:14px;font-weight:600;}
+table.index_digg tr td.digg_t2 div.digg_time span {font-size:10px;color:#888;}
+table.index_digg tr td.digg_t2 div.digg_content span {color:#444;}
+.DIGGMostUserIco img {border:0px;width:48px;height:48px;}
